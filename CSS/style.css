@@ -10,7 +10,10 @@
 #home {
   background-image: url(../IMG/payments-banner-graphic.png);
   width: auto;
-  height: 100%;
+  height: 39em;
+}
+#titre {
+  margin-top: 10em;
 }
 #home h1 {
   color: white;
@@ -21,13 +24,73 @@
 #home button {
   color: #8282b3;
 }
-
+#bulle {
+  color: #8080be;
+  position: fixed;
+  margin-top: 8em;
+  z-index: 1;
+  border-radius: 50%;
+}
+.fa-comments {
+  text-shadow: 3px 3px 16px grey;
+}
 /*---AVANTAGES--------------------------------------------*/
-
+#icon {
+  width: auto;
+  height: 20em;
+}
+#simple {
+  background-color: #f6f9fb;
+  border-top: 1px solid #d2d0ca;
+  width: auto;
+  height: 20em;
+}
+#credit {
+  background-color: #4c535c;
+  color: white;
+  letter-spacing: 0.1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em ;
+}
 /*---CONTENU-----------------------------------------------*/
 
-/*---COMPTE-----------------------------------------------*/
+.italic {
+  font-style: italic;
+}
+#img {
+  margin-left: 3em;
+  margin-right: 3em;
+  width: 40vw;
+  transform: translateY(19%);
+  border-radius: 20px;
+}
 
+#imgblue {
+  background-color: #7cd5ef;
+  height: auto;
+  overflow: hidden;
+}
+#imgviolet {
+  background-color: #8080be;
+  overflow: hidden;
+}
+/*---ACCOUNT-----------------------------------------------*/
+#account {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  border-top: 1px solid #d2d0ca;
+}
+.free {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.account {
+  background-color: #00a57c;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
 /*---FOOTER-----------------------------------------------*/
 #footer {
   background-color: #242629;
@@ -39,7 +102,6 @@
   font-weight: bold;
   letter-spacing: 0.1em;
 }
-
 #legal {
   color: #aaaaaa;
   font-size: xx-small;
@@ -49,7 +111,7 @@
     color: #aaaaaa;
     font-size: x-small;
 }
-svg:not(:root).svg-inline--fa{
+.contactIcon .fa{
   margin-right: 5%;
 }
 #badge {

@@ -12,7 +12,7 @@
   <!--NAVBAR  & -HOME--------------------------------------------->
   <section id="home" class="container-fluid">
   <!--NAVBAR-->
-    <nav class="navbar navbar-default navbar-transparent" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
         <a class="navbar-brand" href="#"><img id="logo" class="img-responsive" src="IMG/logo-icon-white.png"></a> <!--class ? +img-thumbnail?-->
         <p class="navbar-brand">BONSAI</p>
@@ -24,9 +24,13 @@
       </div>
       </div>
     </nav>
+    <!--BULLE CHAT-->
+    <div class="col-xs-offset-11 col-xs-1">
+      <a class="" href="#"><i id="bulle" class="fixed-right fa fa-comments fa-4x" aria-hidden="true"></i></a>
+    </div>
   <!--HOME-->
     <div class="row">
-      <div class="col-md-12 text-center">
+      <div id="titre" class="col-md-12 text-center">
         <h1>Simple & Beautiful Payments for Freelancers</h1>
         <h4>Get paid on time, every time.</h4>
         <button type="button" class="btn btn-default navbar-btn" name="button">CREATE A FREE ACCOUNT</button>
@@ -35,7 +39,9 @@
   </section>
   <!---AVANTAGES-------------------------------------------->
   <section class="container-fluid">
-    <div class="row">
+
+  <!---part. icon -->
+    <div id="icon" class="row">
       <div class="col-md-4 text-center">
         <img src="IMG/payments-calendar-icon.svg" class="img-responsive">
         <h5>Quick</h5>
@@ -52,25 +58,83 @@
         <p>payments and quick disbursement</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h4>SIMPLE PRICING:<br>PAY WHEN YOU GET PAID</h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md">
 
+    <!---part. simple -->
+      <div id="simple" class="row">
+        <div class="col-md-12">
+          <h4 class="text-center">SIMPLE PRINCING :<br>PAY WHEN YOU GET PAID</h4>
+        </div>
+        <div class="col-md-12">
+          <div class="dollar">
+            <i class="fas fa-dollar-sign align-center" aria-hidden="true"></i>
+            <p>1</p>
+          </div>
+          <div class="">
+            <p>PAIR PAID IN VOICE</p>
+            <p><span>2.9% & 30 transaction free</span></p>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <!---part. credit cards-->
+      <div id="credit" class="row">
+        <div class="col-md-12 text-center">
+          <p><h4>Credit cards supported now. ACH coming soon !</h4></p>
+        </div>
+      </div>
   </section>
   <!---CONTENU----------------------------------------------->
+  <section id="contenu" class="container-fluid" >
 
-  <!---COMPTE----------------------------------------------->
+    <!--1ere ligne-->
+    <div id="ligne" class="row">
+      <div id="imgblue" class="col-md-6">
+        <img id="img" class="img-responsive img-rounded center-block" src="IMG/welcome-invoices-graphic-1.png" >
+      </div>
+      <div id="text" class="col-md-6 text-center-md text-align-left">
+        <h3>Integrates deeply with<br>Bonsai Contracts</h3>
+        <p>Increase your pyement rate with Bonsai<br>Contracts: free bulletproof work contracts that<br>are easy to create & e-sign.</p>
+        <p>Once the contract is signed, genrerate a<br>payment schedule with one click. <span class="italic">Contracts<br>are optional but recommended.</span></p>
+      </div>
+    </div> <!--/row-->
 
+    <!--2eme ligne-->
+    <div id="ligne" class="row">
+      <div id="text" class="col-md-6">
+        <h3>Send & get paid with<br>beautiful invoices</h3>
+        <p>Create invoices and resquest payment with the<br>click of a button. Customize them to your<br>brand, then send via email or URL.</p>
+        <p>Clients can pay quickly and securely via credit<br>card.<span class="italic">ACH is coming soon.</span></p>
+      </div>
+      <div id="imgviolet" class="col-md-6">
+        <img id="img" class="img-responsive img-rounded center-block" src="IMG/welcome-invoices-graphic-2.png">
+      </div>
+    </div> <!--/row-->
+
+    <!--3eme ligne-->
+    <div id="ligne" class="row">
+      <div id="imgblue" class="col-md-6">
+        <img id="img" class="img-responsive img-rounded center-block" src="IMG/welcome-invoices-graphic-3.png">
+      </div>
+      <div id="text" class="col-md-6">
+        <h3>Get paid on time<br>with SmartPay</h3>
+        <p>Escrow-like deposits, smart reminders, soft<br>collections, and much more background<br>magic ensure you're paid on time.</p>
+        <p>Focus on the work you love, not on chasing<br>money.<span class="italic">Currently in private beta.</span></p>
+      </div>
+    </div> <!--/row-->
+  </section>
+  <!---ACCOUNT----------------------------------------------->
+  <div id="account" class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>Ready to freelance like a pro?<br> Sign up here & get 5 <span class="free">FREE</span> invoices</h3>
+        <button class="account" type="button" name="button">create an account</button>
+      </div>
+    </div>
+  </div>
   <!---FOOTER----------------------------------------------->
   <footer id="footer">
-    <div class="container">
-      <div class="">
+    <div class="container-fluid">
+      <div class="row">
         <div class="col-md-offset-3 col-md-1">  <!--offset = parametre margin sur la gauche-->
           <p>Products</p>
           <p><span>CONTRACTS</span></p>
@@ -87,7 +151,7 @@
           <p>Contact</p>
           <p>760 Market St., 5th Floor</p>
           <p>San Francisco,CA 94102</p>
-          <p><i class="fas fa-envelope"></i><i class="fab fa-twitter"></i><i class="fas fa-heart"></i></p>
+          <p class="contactIcon"><i class="fas fa fa-envelope"></i><i class="fab fa fa-twitter"></i><i class="fas fa fa-heart"></i></p>
         </div>
       </div>
       <div id="legal" class="col-md-offset-3 col-md-4">
@@ -104,5 +168,8 @@
 <script src="JS/bootstrap.js" type="text/javascript"></script>
 <script src="JS/bootstrap.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+<script src="https://use.fontawesome.com/f4269471ee.js"></script>
+
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script> -->
 </html>
