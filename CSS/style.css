@@ -1,0 +1,57 @@
+/*---NAVBAR-----------------------------------------------*/
+/*.navbar-default{
+    background:transparent;
+    background-image:none;
+    border-color:transparent;
+    box-shadow:none;
+}*/
+
+/*---HOME-------------------------------------------------*/
+#home {
+  background-image: url(../IMG/payments-banner-graphic.png);
+  width: auto;
+  height: 100%;
+}
+#home h1 {
+  color: white;
+}
+#home h4 {
+  color: white;
+}
+#home button {
+  color: #8282b3;
+}
+
+/*---AVANTAGES--------------------------------------------*/
+
+/*---CONTENU-----------------------------------------------*/
+
+/*---COMPTE-----------------------------------------------*/
+
+/*---FOOTER-----------------------------------------------*/
+#footer {
+  background-color: #242629;
+  color: #aaaaaa;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+#footer span {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+#legal {
+  color: #aaaaaa;
+  font-size: xx-small;
+  padding-top: 3em;
+}
+#legal a {
+    color: #aaaaaa;
+    font-size: x-small;
+}
+svg:not(:root).svg-inline--fa{
+  margin-right: 5%;
+}
+#badge {
+  padding-top: 2em;
+}
