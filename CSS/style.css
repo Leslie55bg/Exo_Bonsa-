@@ -4,6 +4,14 @@ body {
   font-family: Raleway;
 }
 
+/****MEDIA**MD*********/
+@media all and (min-width: 768px) and (max-width: 1200px){
+}
+
+/****MEDIA**XS********/
+@media all and (max-width: 768px){
+}
+
 /*---NAVBAR-----------------------------------------------*/
 #logo {
   width: 2em;
@@ -51,6 +59,7 @@ body {
 .fa-comments {
   text-shadow: 3px 3px 16px rgb(78, 77, 78);
 }
+
 /*---AVANTAGES--------------------------------------------*/
 
 #payments {
@@ -92,12 +101,36 @@ body {
   font-family: Raleway;
 }
 /*---CONTENU-----------------------------------------------*/
-.text {
-  letter-spacing: 0.05em;
-padding-top: 10%;
-
-  font-family: Raleway;
+/****MEDIA SM & MD*********/
+@media all and (min-width: 768px) and (max-width: 1920px){
+  .text {
+    letter-spacing: 0.05em;
+    padding-top: 10%;
+    font-family: Raleway;
+  }
+  .ligne2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
 }
+/****MEDIA  XS********/
+@media all and (max-width: 768px){
+  .text {
+    letter-spacing: 0.05em;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: Raleway;
+  }
+  .ligne2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
 .italic {
   font-style: italic;
 }
@@ -108,7 +141,6 @@ padding-top: 10%;
   transform: translateY(19%);
   border-radius: 20px;
 }
-
 .imgblue {
   background-color: #7cd5ef;
   height: auto;
@@ -119,10 +151,7 @@ padding-top: 10%;
   overflow: hidden;
 }
 
-.ligne2 {
-  display: flex;
-  flex-wrap: wrap-reverse;
-}
+
 /*---ACCOUNT-----------------------------------------------*/
 #account {
   padding-top: 5em;
