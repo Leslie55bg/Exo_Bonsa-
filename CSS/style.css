@@ -9,12 +9,15 @@ body {
   width: 2em;
   height: auto;
 }
+
 #navbar {
   color: white;
 }
-
-#noteright {
+.noteright {
   color: white;
+}
+.icon-bar{
+  background: white;
 }
 
 /*---HOME-------------------------------------------------*/
@@ -35,6 +38,8 @@ body {
 }
 #home button {
   color: #8282b3;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 #bulle {
   color: #8080be;
@@ -50,11 +55,12 @@ body {
 
 #payments {
   width: auto;
-  height: 21em;
-  padding-top: 5.5em;
+  height: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
   font-family: Raleway;
 }
-#border {
+.border {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
 }
@@ -65,11 +71,12 @@ body {
   background-color: #f6f9fb;
   border-top: 1px solid #d2d0ca;
   width: auto;
-  height: 21em;
+  height: 100%;
   font-family: Raleway;
-  padding-top: 3.5em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
-#textdollar {
+.textdollar {
   font-family: Raleway;
 }
 #dollar h1 {
@@ -85,15 +92,16 @@ body {
   font-family: Raleway;
 }
 /*---CONTENU-----------------------------------------------*/
-#text {
+.text {
   letter-spacing: 0.05em;
-  padding-top: 9em;
+padding-top: 10%;
+
   font-family: Raleway;
 }
 .italic {
   font-style: italic;
 }
-#img {
+.img {
   margin-left: 3em;
   margin-right: 3em;
   width: 40vw;
@@ -101,12 +109,12 @@ body {
   border-radius: 20px;
 }
 
-#imgblue {
+.imgblue {
   background-color: #7cd5ef;
   height: auto;
   overflow: hidden;
 }
-#imgviolet {
+.imgviolet {
   background-color: #8080be;
   overflow: hidden;
 }
@@ -127,6 +135,8 @@ body {
   text-transform: uppercase;
   padding: 0.5em 1em;
   border-radius: 5px;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 /*---FOOTER-----------------------------------------------*/
 #footer {
@@ -146,6 +156,9 @@ body {
   font-size: xx-small;
   padding-top: 3em;
   font-family: Raleway;
+}
+#legal p {
+  padding-top: 1em;
 }
 #legal a {
     color: #aaaaaa;
