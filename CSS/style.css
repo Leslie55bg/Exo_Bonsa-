@@ -118,6 +118,11 @@ padding-top: 10%;
   background-color: #8080be;
   overflow: hidden;
 }
+
+.ligne2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
 /*---ACCOUNT-----------------------------------------------*/
 #account {
   padding-top: 5em;
