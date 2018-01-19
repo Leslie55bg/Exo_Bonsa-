@@ -1,16 +1,28 @@
+font-family: 'Raleway', sans-serif;
+
+body {
+  font-family: Raleway;
+}
+
 /*---NAVBAR-----------------------------------------------*/
-/*.navbar-default{
-    background:transparent;
-    background-image:none;
-    border-color:transparent;
-    box-shadow:none;
-}*/
+#logo {
+  width: 2em;
+  height: auto;
+}
+#navbar {
+  color: white;
+}
+
+#noteright {
+  color: white;
+}
 
 /*---HOME-------------------------------------------------*/
 #home {
   background-image: url(../IMG/payments-banner-graphic.png);
   width: auto;
   height: 39em;
+  font-family: Raleway;
 }
 #titre {
   margin-top: 10em;
@@ -32,28 +44,52 @@
   border-radius: 50%;
 }
 .fa-comments {
-  text-shadow: 3px 3px 16px grey;
+  text-shadow: 3px 3px 16px rgb(78, 77, 78);
 }
 /*---AVANTAGES--------------------------------------------*/
-#icon {
+
+#payments {
   width: auto;
-  height: 20em;
+  height: 21em;
+  padding-top: 5.5em;
+  font-family: Raleway;
 }
-#simple {
+#border {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.img-payments {
+  width: 18%;
+}
+#dollar {
   background-color: #f6f9fb;
   border-top: 1px solid #d2d0ca;
   width: auto;
-  height: 20em;
+  height: 21em;
+  font-family: Raleway;
+  padding-top: 3.5em;
+}
+#textdollar {
+  font-family: Raleway;
+}
+#dollar h1 {
+  font-size: 70px;
+  color: #8080be;
 }
 #credit {
   background-color: #4c535c;
   color: white;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   padding-top: 1.5em;
   padding-bottom: 1.5em ;
+  font-family: Raleway;
 }
 /*---CONTENU-----------------------------------------------*/
-
+#text {
+  letter-spacing: 0.05em;
+  padding-top: 9em;
+  font-family: Raleway;
+}
 .italic {
   font-style: italic;
 }
@@ -79,6 +115,7 @@
   padding-top: 5em;
   padding-bottom: 5em;
   border-top: 1px solid #d2d0ca;
+  font-family: Raleway;
 }
 .free {
   font-weight: bold;
@@ -97,19 +134,23 @@
   color: #aaaaaa;
   padding-top: 5em;
   padding-bottom: 5em;
+  font-family: Raleway;
 }
 #footer span {
   font-weight: bold;
   letter-spacing: 0.1em;
+  font-family: Raleway;
 }
 #legal {
   color: #aaaaaa;
   font-size: xx-small;
   padding-top: 3em;
+  font-family: Raleway;
 }
 #legal a {
     color: #aaaaaa;
     font-size: x-small;
+    font-family: Raleway;
 }
 .contactIcon .fa{
   margin-right: 5%;

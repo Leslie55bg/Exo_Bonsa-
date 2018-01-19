@@ -6,22 +6,24 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="CSS/bootstrap.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Exo2 Bonsai</title>
   </head>
   <body>
   <!--NAVBAR  & -HOME--------------------------------------------->
   <section id="home" class="container-fluid">
   <!--NAVBAR-->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav id="navbar" class="navbar transparent navbar-static-top" role="navigation">  <!--navbar navbar-default-->
       <div class="navbar-header">
         <a class="navbar-brand" href="#"><img id="logo" class="img-responsive" src="IMG/logo-icon-white.png"></a> <!--class ? +img-thumbnail?-->
         <p class="navbar-brand">BONSAI</p>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-      <div class="navbar-right">
-        <a href="#">LOGIN</a>
-        <a href="#">SIGN UP</a>           <!--a reconstruire-->
-      </div>
+      <div class="navbar-collapse ">
+        <ul class="nav navbar-nav navbar-right">
+          <li><i id="noteright" class="fa fa-bars" aria-hidden="true"></i></li>
+          <li><a id="noteright" href="#">LOGIN</a></li>
+          <li><a id="noteright" href="#">SIGN UP</a></li>
+        </ul>
       </div>
     </nav>
     <!--BULLE CHAT-->
@@ -41,84 +43,85 @@
   <section class="container-fluid">
 
   <!---part. icon -->
-    <div id="icon" class="row">
-      <div class="col-md-4 text-center">
-        <img src="IMG/payments-calendar-icon.svg" class="img-responsive">
-        <h5>Quick</h5>
+    <div id="payments" class="row">
+      <div class="col-md-4 text-center text-muted">
+        <img src="IMG/payments-calendar-icon.svg" class="img-responsive center-block img-payments">
+        <h4>Quick</h4>
         <p>to create send, and pay invoices</p>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="IMG/payments-mail-icon.svg" class="img-responsive">
-        <h5>Beautiful</h5>
+      <div id="border" class="col-md-4 text-center text-muted">
+        <img src="IMG/payments-mail-icon.svg" class="img-responsive center-block img-payments">
+        <h4>Beautiful</h4>
         <p>process for the freelancer and client</p>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="IMG/payments-methods-icon.svg" class="img-responsive">
-        <h5>Secure</h5>
+      <div class="col-md-4 text-center text-muted">
+        <img src="IMG/payments-methods-icon.svg" class="img-responsive center-block img-payments">
+        <h4>Secure</h4>
         <p>payments and quick disbursement</p>
       </div>
     </div>
 
     <!---part. simple -->
-      <div id="simple" class="row">
-        <div class="col-md-12">
-          <h4 class="text-center">SIMPLE PRINCING :<br>PAY WHEN YOU GET PAID</h4>
+
+      <div id="dollar" class="row"> <!--global-->
+        <div class="col-md-12 text-muted text-center"> <!--titre simple-->
+          <h4>SIMPLE PRINCING :<br>PAY WHEN YOU GET PAID</h4>
         </div>
-        <div class="col-md-12">
-          <div class="dollar">
-            <i class="fas fa-dollar-sign align-center" aria-hidden="true"></i>
-            <p>1</p>
-          </div>
-          <div class="">
-            <p>PAIR PAID IN VOICE</p>
-            <p><span>2.9% & 30 transaction free</span></p>
-          </div>
+        <div class="col-md-offset-4 col-md-1"> <!--dollar-->
+          <h1>$1</h1>
+        </div>
+        <div id="textdollar" class="col-md-3">
+          <h2>PER PAID INVOICE</h2>
+          <p class="text-muted">+ 2.9% & 30₵ transaction fee</p>
         </div>
       </div>
 
       <!---part. credit cards-->
       <div id="credit" class="row">
         <div class="col-md-12 text-center">
-          <p><h4>Credit cards supported now. ACH coming soon !</h4></p>
+          <p><h3>Credit cards supported now. ACH coming soon !</h3></p>
         </div>
       </div>
   </section>
   <!---CONTENU----------------------------------------------->
   <section id="contenu" class="container-fluid" >
-
     <!--1ere ligne-->
     <div id="ligne" class="row">
       <div id="imgblue" class="col-md-6">
         <img id="img" class="img-responsive img-rounded center-block" src="IMG/welcome-invoices-graphic-1.png" >
       </div>
-      <div id="text" class="col-md-6 text-center-md text-align-left">
-        <h3>Integrates deeply with<br>Bonsai Contracts</h3>
-        <p>Increase your pyement rate with Bonsai<br>Contracts: free bulletproof work contracts that<br>are easy to create & e-sign.</p>
-        <p>Once the contract is signed, genrerate a<br>payment schedule with one click. <span class="italic">Contracts<br>are optional but recommended.</span></p>
+      <div id="text" class="col-md-6">
+        <div class="col-md-offset-2 col-md-8 text-muted">
+          <h2>Integrates deeply with<br>Bonsai Contracts</h2>
+          <p>Increase your payement rate with Bonsai<br>Contracts: free bulletproof work contracts that<br>are easy to create & e-sign.</p>
+          <p>Once the contract is signed, genrerate a<br>payment schedule with one click. <span class="italic">Contracts<br>are optional but recommended.</span></p>
+        </div>
       </div>
     </div> <!--/row-->
-
     <!--2eme ligne-->
     <div id="ligne" class="row">
       <div id="text" class="col-md-6">
-        <h3>Send & get paid with<br>beautiful invoices</h3>
-        <p>Create invoices and resquest payment with the<br>click of a button. Customize them to your<br>brand, then send via email or URL.</p>
-        <p>Clients can pay quickly and securely via credit<br>card.<span class="italic">ACH is coming soon.</span></p>
+        <div class="col-md-offset-2 col-md-8 text-muted">
+          <h2>Send & get paid with<br>beautiful invoices</h2>
+          <p>Create invoices and resquest payment with the<br>click of a button. Customize them to your<br>brand, then send via email or URL.</p>
+          <p>Clients can pay quickly and securely via credit<br>card.<span class="italic">ACH is coming soon.</span></p>
+        </div>
       </div>
       <div id="imgviolet" class="col-md-6">
         <img id="img" class="img-responsive img-rounded center-block" src="IMG/welcome-invoices-graphic-2.png">
       </div>
     </div> <!--/row-->
-
     <!--3eme ligne-->
     <div id="ligne" class="row">
       <div id="imgblue" class="col-md-6">
         <img id="img" class="img-responsive img-rounded center-block" src="IMG/welcome-invoices-graphic-3.png">
       </div>
       <div id="text" class="col-md-6">
-        <h3>Get paid on time<br>with SmartPay</h3>
-        <p>Escrow-like deposits, smart reminders, soft<br>collections, and much more background<br>magic ensure you're paid on time.</p>
-        <p>Focus on the work you love, not on chasing<br>money.<span class="italic">Currently in private beta.</span></p>
+        <div class="col-md-offset-2 col-md-8 text-muted">
+          <h2>Get paid on time<br>with SmartPay</h2>
+          <p>Escrow-like deposits, smart reminders, soft<br>collections, and much more background<br>magic ensure you're paid on time.</p>
+          <p>Focus on the work you love, not on chasing<br>money.<span class="italic">Currently in private beta.</span></p>
+        </div>
       </div>
     </div> <!--/row-->
   </section>
@@ -170,6 +173,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="https://use.fontawesome.com/f4269471ee.js"></script>
-
 <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script> -->
 </html>
